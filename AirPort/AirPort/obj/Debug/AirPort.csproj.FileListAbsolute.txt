@@ -1,0 +1,7 @@
+C:\Users\suren\source\repos\AirPort\AirPort\obj\Debug\AirPort.csprojAssemblyReference.cache
+C:\Users\suren\source\repos\AirPort\AirPort\obj\Debug\AirPort.csproj.CoreCompileInputs.cache
+C:\Users\suren\source\repos\AirPort\AirPort\bin\Debug\AirPort.exe.config
+C:\Users\suren\source\repos\AirPort\AirPort\bin\Debug\AirPort.exe
+C:\Users\suren\source\repos\AirPort\AirPort\bin\Debug\AirPort.pdb
+C:\Users\suren\source\repos\AirPort\AirPort\obj\Debug\AirPort.exe
+C:\Users\suren\source\repos\AirPort\AirPort\obj\Debug\AirPort.pdb
