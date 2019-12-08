@@ -1,31 +1,32 @@
 ﻿using System;
 using System.Collections.Generic;
 
-class MainClass
+
+
+namespace Multimap
 {
-    public static void Main(string[] args)
+    class MainClass
     {
-        Dictionary<string, List<int>> multimap = new Dictionary<string, List<int>>()
+        public static void Main(string[] args)
         {
-            ["a"] = new List<int> { 5, 4, 3, 5 },
-            ["b"] = new List<int> { 5, 4, 3, 5, 78 },
-            ["c"] = new List<int> { 5, 4, 3, 5, 25 },
 
 
-        };
+            Multimap<int, string> map = new Multimap<int, string>();
+            map.Addmap(1, "s");
+            map.Addmap(1, "a");
+            map.Addmap(1, "b");
+            map.Addmap(1, "s");
+            map.Addmap(1, "dasd");
+            map.Addmap(1, "s");
+            map.Addmap(2, "Suren");
+            map.Addmap(2, "Scorpion");
+            map.Addmap(2, "November");
 
-        foreach (string key in multimap.Keys)
-        {
-            Console.Write($"['{key}']=[");
-            foreach (int  item in multimap[key])
-            {
-                Console.Write($"{item} ");
-            }
-            Console.WriteLine("]");
+
+
+
+            map.Show(1);
+            map.Show(2);
         }
-       
-
-
-
     }
 }
