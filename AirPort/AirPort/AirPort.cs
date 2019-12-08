@@ -12,56 +12,42 @@ namespace AirPort
         public string Name { get; set; }
         public string CountryCode { get; set; }
         private string size;
-        private string size_number;
+ 
        
-        public string Size
-        {
-            get
-            {
-                return size_number;
-            }
-
-
-
-            set
-            {
-                
-                switch (value)
-                {
-                    case "Small":
-                        this.size = value;
-                        this.size_number = "0";
-                        break;
-                    case "Medium":
-                        this.size = value;
-                        this.size_number = "1";
-                        break;
-                    case "Large":
-                        this.size = value;
-                        this.size_number = "2";
-                        break;
-                    case "Mega":
-                        this.size = value;
-                        this.size_number = "3";
-                        break;
-                    case "Super Mega":
-                        this.size = value;
-                        this.size_number = "4";
-                        break;
-                    default:
-                        break;
-                }
-
-            }
-
-
-        }
+        public Sizes Size { get; set; }
+       
 
 
 
 
         public override string ToString()
         {
+            switch (Size)
+            {
+                case Sizes.Small:
+                    this.size = "Small";
+
+                    break;
+                case Sizes.Medium:
+                    this.size = "Medium";
+
+                    break;
+                case Sizes.Large:
+                    this.size = "Large";
+
+
+                    break;
+                case Sizes.Mega:
+                    this.size = "Mega";
+
+                    break;
+                case Sizes.SuperMega:
+                    this.size = "SuperMega";
+
+                    break;
+                default:
+                    break;
+            }
             return $"{Name}, {CountryCode}, {size}";
         }
 

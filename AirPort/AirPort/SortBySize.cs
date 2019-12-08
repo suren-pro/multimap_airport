@@ -10,11 +10,11 @@ namespace AirPort
     {
         public int Compare(AirPort first, AirPort second)
         {
-            if (Convert.ToInt32(first?.Size) >Convert.ToInt32(second?.Size))
+            if (first.Size>second.Size)
             {
                 return 1;
             }
-            if (Convert.ToInt32(first?.Size) <Convert.ToInt32(second?.Size))
+            if (first.Size < second.Size)
             {
                 return -1;
             }

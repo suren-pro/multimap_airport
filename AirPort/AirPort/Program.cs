@@ -12,12 +12,11 @@ namespace AirPort
         {
             SortedSet<AirPort> keys = new SortedSet<AirPort>(new SortBySize())
             {
-                new AirPort{ Name="nDSAD",CountryCode = "SSSD44",Size="Large"},
-                new AirPort{ Name="nDSAeeeeeee",CountryCode = "SSD445454",Size="Medium"},
-                new AirPort{ Name="nDSdasdsads",CountryCode = "SSSD447888",Size="Small"},
-                new AirPort{ Name="nasasd",CountryCode = "SSSDDA44",Size="Mega"},
-                new AirPort{ Name="ndssddasd",CountryCode = "SSSD4WWW4",Size="Super"},
-                new AirPort{ Name="asdddddwq",CountryCode = "SWWSSD44",Size="Super Mega"},
+                new AirPort{ Name="nDSAD",CountryCode = "SSSD44",Size=Sizes.Large},
+                new AirPort{ Name="nDSAeeeeeee",CountryCode = "SSD445454",Size=Sizes.Medium},
+                new AirPort{ Name="nDSdasdsads",CountryCode = "SSSD447888",Size=Sizes.Small},
+                new AirPort{ Name="ndssddasd",CountryCode = "SSSD4WWW4",Size=Sizes.Mega},
+                new AirPort{ Name="asdddddwq",CountryCode = "SWWSSD44",Size=Sizes.SuperMega},
 
 
             };
